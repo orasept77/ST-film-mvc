@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping namespace="test.Models" assembly="test" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="GatunekFilmu" table="GatunekFilmu">
+    <id name="Id" column="Id" type="Int32">
+      <generator class="native" />
+    </id>
+    <property name="Nazwa" type="string" column="Nazwa" length="50" />
+    <property name="Aktywny" type="int" column="Aktywny" />
+  </class>
+</hibernate-mapping>

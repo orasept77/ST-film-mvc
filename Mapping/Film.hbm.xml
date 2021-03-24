@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping namespace="test.Models" assembly="test" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Film" table="Film">
+    <id name="Id" column="Id" type="Int32">
+      <generator class="native" />
+    </id>
+    <property name="Rok" type="int" column="Rok" />
+    <property name="Nazwa" type="string" column="Nazwa" length="50" />
+    <property name="Ocena" type="decimal" column="Ocena" />
+    <property name="Jezyk" type="int" column="Jezyk" />
+
+    <many-to-one name="RodzajId" class="test.Models.GatunekFilmu" column="RodzajId" fetch="select" lazy="false" cascade="none" />
+    <many-to-one name="RezyserId" class="test.Models.Rezyser" column="RezyserId" fetch="select" lazy="false" cascade="none" />
+  </class>
+</hibernate-mapping>

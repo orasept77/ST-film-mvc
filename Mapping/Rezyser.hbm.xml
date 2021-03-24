@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping namespace="test.Models" assembly="test" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Rezyser" table="Rezyser">
+    <id name="Id" column="Id" type="Int32">
+      <generator class="native" />
+    </id>
+    <property name="Imie" type="string" column="Imie" length="50" />
+    <property name="Nazwisko" type="string" column="Nazwisko" length="50" />
+    <property name="LiczbaFilmow" type="int" column="LiczbaFilmow"  />
+  </class>
+</hibernate-mapping>

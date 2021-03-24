@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory>
+    <property name="connection.provider">
+      NHibernate.Connection.DriverConnectionProvider
+    </property>
+    <property name="connection.driver_class">
+      NHibernate.Driver.SqlClientDriver
+    </property>
+    <property name="command_timeout">
+      300
+    </property>
+    <property name="connection.connection_string">
+      Data Source=LAPTOP-HM3INCNL\SQLEXPRESS;Initial Catalog=test; Integrated Security=True
+    </property>
+    <property name="dialect">NHibernate.Dialect.MsSql2008Dialect</property>
+    <property name="show_sql">false</property>
+    <mapping xmlns="urn:nhibernate-configuration-2.2" assembly="test" />
+  </session-factory>
+</hibernate-configuration>
