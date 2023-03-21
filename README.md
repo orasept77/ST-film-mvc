@@ -1,2 +1,2 @@
 # ST-film-mvc
-Разбирайтесь сами или объясню в лс  :)
+Simple CRUD MVC Nhibirnate
